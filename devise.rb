@@ -138,13 +138,6 @@ HTML
 run 'curl -L https://raw.githubusercontent.com/lewagon/awesome-navbars/master/templates/_navbar_wagon.html.erb > app/views/shared/_navbar.html.erb'
 run 'curl -L https://raw.githubusercontent.com/lewagon/rails-templates/master/logo.png > app/assets/images/logo.png'
 
-# README
-########################################
-markdown_file_content = <<-MARKDOWN
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
-MARKDOWN
-file 'README.md', markdown_file_content, force: true
-
 # Generators
 ########################################
 generators = <<-RUBY
@@ -263,5 +256,5 @@ JS
   ########################################
   git :init
   git add: '.'
-  git commit: "-m 'Initial commit with devise template from https://github.com/lewagon/rails-templates'"
+  git commit: "-m 'Initial commit with devise template'"
 end
